@@ -1,0 +1,368 @@
+/* top header style start */
+.top-header-area {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-height: 90px;
+    padding: 15px 30px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-header-area .right-options-area {
+    display: flex;
+    align-items: center;
+}
+.top-header-area .balance {
+    display: flex;
+    align-items: center;
+}
+.top-header-area .balance .label {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.top-header-area .user-dropdown-menu {
+    margin-left: 30px;
+    position: relative;
+    z-index: 4;
+}
+.top-header-area .dropdown-item-link {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 45px;
+    padding: 10px 20px 10px 10px;
+}
+.top-header-area .dropdown-item-link .user-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+.top-header-area .dropdown-item-link span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 18px 0 10px;
+}
+.top-header-area .dropdown-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 21px;
+    z-index: -1;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F4;
+    box-shadow: 0px 30px 20px -20px rgba(198, 211, 232, 0.2);
+    border-radius: 10px;
+    padding: 55px 20px 20px;
+    display: none;
+}
+.top-header-area .user-dropdown-menu:hover .dropdown-box {
+    display: block;
+    animation: fade 0.3s;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        top: 30px;
+    }
+    100% {
+        opacity: 1;
+        top: 21px;
+    }
+}
+.top-header-area .dropdown-item a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+.top-header-area .dropdown-item:last-child a {
+    margin-top: 20px;
+}
+.top-header-area .dropdown-item a:hover {
+    color: #FF7901;
+}
+.top-header-area .dropdown-item .logout-btn {
+    padding: 10px 30px;
+    background: rgba(255, 1, 1, 0.1);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FF5E5E;
+    margin-bottom: 0;
+    display: flex;
+}
+.top-header-area .dropdown-item .logout-btn i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+
+.top-header-area .mobile-menu-icon i {
+    display: none;
+}
+/* top header style end */
+
+/* left sidebar style start */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0000003d;
+    z-index: 9;
+    display: none;
+}
+.overlay.active {
+    display: block;
+}
+.left-sidebar-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 224px;
+    padding: 11px 0;
+    overflow-y: auto;
+    z-index: 10;
+}
+.left-sidebar-area .site-logo-box {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.left-sidebar-area .nav-item {
+    padding: 14px 0 14px 0;
+}
+.left-sidebar-area .nav-item a {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 2px 20px 2px 42px;
+}
+.left-sidebar-area .nav-item a:hover {
+    color: #fff;
+}
+.left-sidebar-area .nav-item a:hover i {
+    color: #FF7901;
+}
+.left-sidebar-area .nav-item.active > a {
+    border-right: 3px solid #FF7901;
+    color: #fff;
+}
+.left-sidebar-area .nav-item a i {
+    margin-right: 20px;
+}
+.left-sidebar-area .nav-item.active > a i {
+    color: #FF7901;
+}
+.left-sidebar-area .has-submenu .arrow-icon {
+    float: right;
+}
+.left-sidebar-area .submenu-items {
+    margin-left: 10px;
+    padding-top: 10px;
+    display: none;
+}
+.left-sidebar-area .submenu-items.active {
+    display: block;
+}
+.left-sidebar-area .nav-item.active .has-submenu .arrow-icon {
+    transform: rotate(180deg);
+}
+.left-sidebar-area .submenu-items .nav-item a {
+    font-size: 12px;
+}
+.left-sidebar-area .submenu-items .nav-item i {
+    margin-right: 12px;
+}
+
+
+
+.left-sidebar-area::-webkit-scrollbar {
+    width: 2px;
+}
+.left-sidebar-area::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.left-sidebar-area::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.left-sidebar-area::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* left sidebar style end */
+
+/* main content style start */
+.main-content-area {
+    min-height: calc(100vh - 90px);
+    margin: 90px 0 0 0px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+.main-content-area .user-info-col {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.main-content-area .user-info-box {
+    margin-right: 15px;
+    padding: 40px 20px 70px;
+    text-align: center;
+}
+.main-content-area .user-info-box .user-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 4px;
+}
+.main-content-area .user-info-box .user-name {
+    line-height: 38px;
+}
+.main-content-area .user-info-box p {
+    margin-bottom: 3px;
+}
+.main-content-area .credit-card-col {
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+.main-content-area .credit-card-box {
+    margin-left: 15px;
+    padding: 70px 30px;
+}
+.main-content-area .credit-card-box .heading {
+    margin-bottom: 10px;
+}
+.main-content-area .credit-card-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.main-content-area .credit-card-item .inner {
+    margin-right: 15px;
+    margin-left: 15px;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    padding: 28px 30px;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+.main-content-area .credit-card-item:first-child .inner {
+    margin-left: 0;
+}
+.main-content-area .credit-card-item:last-child .inner {
+    margin-right: 0;
+}
+.main-content-area .credit-card-item .item-heading {
+    margin-bottom: 30px;
+}
+.main-content-area .credit-card-item .inner.active .item-heading {
+    color: #26262E;
+}
+.main-content-area .credit-card-item .inner.active .card-number {
+    color: #26262E;
+}
+.main-content-area .credit-card-item .trash-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #F2F2F4;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.main-content-area .credit-card-item .trash-item i {
+    color: #BDBDBD;
+}
+.main-content-area .credit-card-item .inner:hover,
+.main-content-area .credit-card-item .inner.active {
+    border: 1px solid #FF7901;
+}
+.main-content-area .credit-card-item .inner:hover .trash-item,
+.main-content-area .credit-card-item .inner.active .trash-item {
+    background: #FFD7D7;
+}
+.main-content-area .credit-card-item .inner:hover .trash-item i,
+.main-content-area .credit-card-item .inner.active .trash-item i {
+    color: #FF4242;
+}
+
+/* profile tab style start */
+.profile-tab-card .tabs {
+    padding: 30px 5px 0;
+    text-align: center;
+    border-bottom: 2px solid #F2F2F4;
+}
+.profile-tab-card .tabs li {
+    display: inline-block;
+}
+.profile-tab-card .tabs li a {
+    font-weight: 500;
+    line-height: 28px;
+    color: #26262E;
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    position: relative;
+}
+.profile-tab-card .tabs li:hover a, 
+.profile-tab-card .tabs li.active a {
+    color: #FF7901;
+}
+.profile-tab-card .tabs li.active a::after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #FF7901;
+}
+.profile-tab-card #tab-contents .tab-contents {
+    padding: 50px 0;
+    display: none;
+}
+.profile-tab-card #tab-contents .tab-contents.active {
+    display: block;
+}
+.profile-tab-card .tab-contents .content-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.profile-tab-card .tab-contents .content-wrapper .middle-content {
+    width: 70%;
+}
+/* email notification tab content */
+.tab-contents .switch {
+    margin-bottom: 30px;
+}
+.tab-contents .form-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.tab-contents .form-col .content {
+    padding: 0 15px;
+}
+.tab-contents .form-col:first-child .content {
+    padding-left: 0;
+}
+.tab-contents .form-col:last-child .content {
+    padding-right: 0;
+}
+.tab-contents .form-col .required {
+    color: #FF7901;
+}
+
+/* main content style end */

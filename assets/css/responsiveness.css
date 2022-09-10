@@ -1,0 +1,166 @@
+/* Mini desktop */
+@media (min-width: 992px) {
+    
+}
+
+/* Normal desktop :. */
+@media (min-width: 1201px) {
+    .main-content-area {
+        margin-left: 224px;
+    }
+}
+
+/* Mini desktop :1200px. */
+@media (max-width: 1200px) {
+    .left-sidebar-area {
+        left: -500px;
+    }
+    .left-sidebar-area.active {
+        left: 0;
+    }
+    .top-header-area .mobile-menu-icon i {
+        display: block;
+        color: #fff;
+        font-size: 30px;
+    }
+}
+ 
+/* Tablet :991px. */
+@media (max-width: 991px) {
+    h3 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    /* top header */
+    .top-header-area .balance .label {
+        font-size: 16px;
+    }
+    .top-header-area .dropdown-item-link span {
+        font-size: 16px;
+    }
+    .top-header-area .dropdown-item .logout-btn {
+        padding: 10px 16px;
+    }
+    /* main content area */
+    .main-content-area .credit-card-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+    .main-content-area .credit-card-box {
+        padding: 30px 20px;
+    }
+    .main-content-area .user-info-col {
+        flex: 0 0 28%;
+        max-width: 28%;
+    }
+    .main-content-area .credit-card-col {
+        flex: 0 0 72%;
+        max-width: 72%;
+    }
+    .main-content-area .credit-card-item .inner {
+        padding: 22px 14px;
+    }
+    .main-content-area .credit-card-item:last-child {
+        margin-bottom: 0;
+    }
+    .main-content-area .credit-card-item:last-child .inner {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+ 
+/* Large mobile :767px. */
+@media (max-width: 767px) {
+    /* top header area */
+    .top-header-area {
+        padding: 15px 10px;
+    }
+    .top-header-area .dropdown-item-link {
+        padding: 5px;
+    }
+    .top-header-area .user-dropdown-menu {
+        margin-left: 14px;
+    }
+    /* main content area */
+    .main-content-area {
+        padding: 16px;
+    }
+    .main-content-area .user-info-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .main-content-area .user-info-box {
+        margin-right: 0;
+        padding: 30px 20px 40px;
+    }
+    .main-content-area .credit-card-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .main-content-area .credit-card-box {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .main-content-area .credit-card-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .main-content-area .credit-card-item .inner {
+        margin: 0 !important;
+    }
+    .profile-tab-card .tabs {
+        padding: 20px 0 0;
+    }
+    .profile-tab-card .tabs li a {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+    .profile-tab-card .tab-contents .content-wrapper .middle-content {
+        width: 100%;
+        padding: 0 10px;
+    }
+    label {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .tab-contents .form-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .tab-contents .form-col .content {
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    input {
+        padding: 8px 14px;
+    }
+}
+ 
+/* small mobile :576px. */
+@media (max-width: 576px) {
+    .top-header-area .dropdown-item .logout-btn {
+        font-size: 14px;
+    }
+    .top-header-area .dropdown-item .logout-btn i {
+        font-size: 16px;
+    }
+    .top-header-area .dropdown-box {
+        padding: 55px 14px 20px;
+    }
+}
+
+/* small mobile :370px. */
+@media (max-width: 370px) {
+    .top-header-area .dropdown-item-link .user-img {
+        display: none;
+    }
+}

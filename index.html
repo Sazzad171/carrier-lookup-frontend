@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Font-awesome css -->
+	<link rel="stylesheet" href="./assets/css/font-awesome-6.2.css">
+	<!-- Bootstrap icons css -->
+	<link rel="stylesheet" href="./assets/css/bootstrap-icons.css">
+    <!-- Commmon css -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Responsiveness css -->
+    <link rel="stylesheet" href="./assets/css/responsiveness.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- full body overlay -->
+    <div class="overlay" id="bodyOverlay"></div>
+
+    <!-- Top header area start -->
+    <header class="top-header-area bg-black">
+        <div class="mobile-menu-icon" id="mobileMenuIcon">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <!-- right options -->
+        <ul class="right-options-area">
+            <li>
+                <h3 class="balance text-brand">
+                    <span class="label text-white">Balance :</span>$125
+                </h3>
+            </li>
+            <li class="user-dropdown-menu">
+                <a href="#" class="dropdown-item-link bg-white">
+                    <img src="./assets/images/user.png" alt="user-img" class="user-img">
+                    <span>Alexa Jui</span>
+                    <i class="bi bi-chevron-down text-ash"></i>
+                </a>
+                <ul class="dropdown-box">
+                    <li class="dropdown-item">
+                        <a href="#" class="text-ash">My Profile</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="text-ash">Add Fund</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="text-ash">API Documentation</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="text-ash">Log Out</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="logout-btn">
+                            <i class="bi bi-box-arrow-left"></i>Log Out
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <!-- Top header area end -->
+
+    <!-- Left sidebar start -->
+    <aside class="left-sidebar-area bg-black" id="leftSidebar">
+        <!-- site logo -->
+        <div class="site-logo-box">
+            <img src="./assets/images/logo.png" class="site-logo" alt="logo">
+        </div>
+
+        <!-- nav items -->
+        <div class="nav-item-box">
+            <ul>
+                <li class="nav-item">
+                    <a href="#" class="text-ash">
+                        <i class="bi bi-columns-gap"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="text-ash">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Lookup
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="text-ash">
+                        <i class="bi bi-stack"></i>
+                        Files
+                    </a>
+                </li>
+                <li class="nav-item" id="submenu">
+                    <a href="#" class="text-ash has-submenu">
+                        <i class="fa-sharp fa-solid fa-file"></i>
+                        Logs
+                        <i class="bi bi-chevron-down text-ash arrow-icon"></i>
+                    </a>
+                    <!-- submenu -->
+                    <ul class="submenu-items" id="submenuItems">
+                        <li class="nav-item">
+                            <a href="#" class="text-ash">
+                                <i class="fa-solid fa-file-lines"></i>
+                                Single/Bulk Lookup
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-ash">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                Daily Usages
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="text-ash">
+                        <i class="bi bi-patch-check-fill"></i>
+                        Buy Credits
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="text-ash">
+                        <i class="fa-solid fa-group-arrows-rotate"></i>
+                        Integrations
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="text-ash">
+                        <i class="fa-solid fa-user"></i>
+                        My Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- Left sidebar end -->
+
+    <!-- Main content start -->
+    <main class="main-content-area">
+        <!-- user info and credit card info -->
+        <div class="row">
+            <div class="col user-info-col">
+                <div class="card user-info-box">
+                    <div class="user-img">
+                        <img src="./assets/images/user.png" alt="user-img">
+                    </div>
+                    <h5 class="user-name">Alexa Jui</h5>
+                    <p class="user-email text-ash">alexajui@gmail.com</p>
+                    <p class="user-phone text-ash">+1 354 785 4125</p>
+                    <p class="user-address text-ash">3213 D Street, Columbus, USA</p>
+                </div>
+            </div>
+
+            <div class="col credit-card-col">
+                <div class="card credit-card-box">
+                    <h4 class="heading">Your Credit Cards</h4>
+                    <div class="row">
+                        <div class="col credit-card-item">
+                            <div class="inner">
+                                <h5 class="item-heading text-ash">Credit Card 1</h5>
+                                <h5 class="card-number text-gray">xxxxxxxxxxxx4684</h5>
+                                <span class="trash-item">
+                                    <i class="bi bi-trash"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col credit-card-item">
+                            <div class="inner active">
+                                <h5 class="item-heading text-ash">Credit Card 2 (Default)</h5>
+                                <h5 class="card-number text-gray">xxxxxxxxxx4242</h5>
+                                <span class="trash-item">
+                                    <i class="bi bi-trash"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col credit-card-item text-ash">
+                            <div class="inner">
+                                <h5 class="item-heading">Credit Card 3</h5>
+                                <h5 class="card-number text-gray">xxxxxxxxxxxx1254</h5>
+                                <span class="trash-item">
+                                    <i class="bi bi-trash"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- profile tab area -->
+        <div class="card profile-tab-card">
+            <nav class="tabs" id="tabs">
+                <li>
+                    <a href="#tab1">Update Profile</a>
+                </li>
+                <li>
+                    <a href="#tab2">Change Password</a>
+                </li>
+                <li class="active">
+                    <a href="#tab3">Email Notifications</a>
+                </li>
+                <li>
+                    <a href="#tab4">Auto Recharge Settings</a>
+                </li>
+            </nav>
+              
+            <div id="tab-contents">
+                <div id="tab1" class="tab-contents">
+                    <div class="content-wrapper">
+                        <div class="middle-content">
+                            <h6>Update Profile Tab</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab-contents">
+                    <div class="content-wrapper">
+                        <div class="middle-content">
+                            <h6>Change Password Tab</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3" class="tab-contents active">
+                    <div class="content-wrapper">
+                        <div class="middle-content">
+                            <form action="test">
+                                <div class="switch">
+                                    <input id="radio-a" type="radio" name="switch"/>
+                                    <input id="radio-a" type="radio" name="switch"/>
+                                    <label for="radio-a">Notify me when list verification completes</label>
+                                    <span class="toggle-outside"><span class="toggle-inside"></span></span>
+                                </div>
+                                <div class="switch">
+                                    <input id="radio-b" type="radio" name="switch2"/>
+                                    <input id="radio-b" type="radio" name="switch2"/>
+                                    <label for="radio-b">Notify me when list export completes</label>
+                                    <span class="toggle-outside"><span class="toggle-inside"></span></span>
+                                </div>
+                                <div class="switch">
+                                    <input id="radio-c" type="radio" name="switch3"/>
+                                    <input id="radio-c" type="radio" name="switch3"/>
+                                    <label for="radio-c">Notify me when list verification result is about to expire</label>
+                                    <span class="toggle-outside"><span class="toggle-inside"></span></span>
+                                </div>
+
+                                <hr>
+
+                                <div class="switch">
+                                    <input id="radio-d" type="radio" name="switch4"/>
+                                    <input id="radio-d" type="radio" name="switch4"/>
+                                    <label for="radio-d">Receive Low Credits Email</label>
+                                    <span class="toggle-outside"><span class="toggle-inside"></span></span>
+                                </div>
+                                <div class="row">
+                                    <div class="form-col">
+                                        <div class="content">
+                                            <label for="email">Send Email to<span class="required">*</span></label>
+                                            <input type="email" name="email" id="email" placeholder="alexajui@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-col">
+                                        <div class="content">
+                                            <label for="credits">When credits are less than<span class="required">*</span></label>
+                                            <input type="email" name="credits" id="credits" placeholder="50">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <p>
+                                    <a href="#" class="btn">Save Changes</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab4" class="tab-contents">
+                    <div class="content-wrapper">
+                        <div class="middle-content">
+                            <h6>Auto Recharge Settings Tab</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main content end-->
+
+
+
+
+    <!-- Main script -->
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
